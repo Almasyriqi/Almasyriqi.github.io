@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--M. Syifa'ul Ikrom Almasyriqi-->
+<!--TI-2G-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="orderStyle.css">
+        <title>R-DISH</title>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+        <script src="jquery-3.5.1.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <link rel="shortcut icon" href="img/logo2.png">
+        <script>
+            // penggunaan jquery checkboxradio dan controlgroup
+            $(function() {
+                $( "#radio-1" ).checkboxradio();
+                $( "#radio-2" ).checkboxradio();
+                $( "#controlgroup-food" ).controlgroup();
+            });
+        </script>
+        <script src="order.js"></script>
+    </head>
+    <body>
+        <!------------------------------ NAVBAR ------------------------------>
+        <nav class="navbar">
+            <img src="img/logo2.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+
+                <!------------------------------ ORDER ------------------------------>
+        <div class="order">
+            <h2><b>INPUT ORDER</b></h2>
+            <br><br>
+            <form>
+            <label>Customer ID </label><input type="text" id="Customer-ID"><br><br>
+            <label>Customer Name </label><input type="text" id="Customer-name"><br><br>
+            <label>Customer Status </label>
+            <div id="radioset">
+                <input type="radio" id="radio-1" name="radio" value="member"><label for="radio-1">Member</label>
+                <input type="radio" id="radio-2" name="radio" value="non-member" checked="checked"><label for="radio-2">Non Member</label>
+            </div>
+            <br>
+            <fieldset>
+                <legend>Choose Menu </legend>
+                <div id="controlgroup-food">
+                    <select id="food-name">
+                        <option value="Burger">Burger (Rp 20.000)</option>
+                        <option value="Pizza">Pizza (Rp 100.000)</option>
+                        <option value="Sushi">Sushi (Rp 50.000)</option>
+                        <option value="Udon">Udon (Rp 80.000)</option>
+                        <option value="Beef Steak">Beef Steak (Rp 200.000)</option>
+                        <option value="Noodle">Noodle (Rp 30.000)</option>
+                        <option value="Chicken Katsu">Chicken Katsu(Rp 40.000)</option>
+                    </select>
+                    <label for="horizontal-spinner" class="ui-controlgroup-label"># of food</label>
+                    <input id="horizontal-spinner" class="ui-spinner-input" value="1">
+                    <button type="button" class="add-food">Add Food</button>
+                    <button type="button" class="delete-food">Delete Food</button>
+                </div>
+            </fieldset>
+            <br>
+            <table id="table-food">
+            <thead>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <a href="#bill" class="order-food">Order Food</a>
+        </form>
+        </div>
+
+        <!------------------------------ BILL ------------------------------>
+        
+        <div class="bill-order" id="bill">
+            <div class="title-bill">
+                <h2> Order Bill </h2>
+                <div class="line">
+                    <div class="line-1"></div> <br>
+                    <div class="line-2"></div>
+                </div>
+            </div>
+            <center>
+                <div class="nota">
+                    <table id="table-bill">
+                        <tbody>
+                            <tr>
+                                <td>Customer ID </td>
+                                <td id="id"></td>
+                            </tr>
+                            <tr>
+                                <td>Customer Name </td>
+                                <td id="name"></td>
+                            </tr>
+                            <tr>
+                                <td>Customer Status</td>
+                                <td id="status"></td>
+                            </tr>
+                            <tr>
+                                <td>Food Name</td>
+                                <td id="food-order"></td>
+                            </tr>
+                            <tr>
+                                <td>Order Quantity</td>
+                                <td id="order-quantity"></td>
+                            </tr>
+                            <tr>
+                                <td>Total Diskon</td>
+                                <td id="total-diskon"></td>
+                            </tr>
+                            <tr>
+                                <td>Total Price</td>
+                                <td id="total-price"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </center>
+        <footer>
+            <center>
+                <div id="copyright" class="line-footer">
+                <p>&copy; M. Syifa'ul Ikrom Almasyriqi | Kelas TI-2G |
+                    Praktikum Design Pemrograman Web 
+                </p>
+                </div>
+            </center>  
+        </footer>
+    </body>
+</html>

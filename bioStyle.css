@@ -1,0 +1,318 @@
+/* M. Syifa'ul Ikrom Almasyriqi */
+/* TI-2G */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url(font/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(font/Nunito/Nunito-Regular.ttf);
+}
+
+html {
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.navbar {
+    position: absolute;
+    padding-top: 20px;
+    width: 1140px;
+    height: auto;
+}
+
+.navbar img {
+    height: 80px;
+    padding-left: 60px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #1A1A1A;
+    font-size: 90%;
+    transition: border 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* =================== HEADER =================== */
+
+header {
+    height: 100vh;
+}
+
+.banner {
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    flex-basis: 50%;
+}
+
+.left-column {
+    margin-top: 180px;
+    margin-left: 70px;
+    padding-top: 50px;
+}
+
+.left-column h1 {
+    font-family: 'Dosis';
+    color: #1A1A1A;
+    font-size: 100px;
+    word-spacing: 4px;
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: .2s;
+}
+
+.left-column h3 {
+    font-family: 'Dosis';
+    font-size: 35px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeDown 1s forwards;
+    animation-delay: .2s;
+}
+
+h1 span,
+h3 span {
+    font-family: 'Dosis';
+    color: #e67e22;
+}
+
+.right-column img {
+    width: 90%;
+    animation: scale .5s forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+
+.right-column {
+    margin-top: 60px;
+}
+
+.btn button {
+    padding: 7px 30px;
+    margin-right: 15px;
+    border: 1px solid #E67E22;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #E67E22;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.btn .primary-btn {
+    background: linear-gradient(#f1be90, #E67E22);
+    box-shadow: 0 2px 15px rgba(250, 145, 47, 0.26);
+    color: #fff;
+}
+
+.btn button:hover {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+
+/* =================== About Me =================== */
+
+.about-me {
+    margin-top: 150px;
+    max-width: 650px;
+    display: flex;
+    background-image: linear-gradient(120deg, #f1be90 0%, #fda085 100%);
+    border-radius: 10px;
+}
+
+.left-part,
+.right-part {
+    margin: 20px 40px;
+}
+
+.left-part {
+    flex-basis: 30%;
+}
+
+.left-part img {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+    padding-top: 35px;
+}
+
+.right-part {
+    flex-basis: 70%;
+}
+
+.right-part h2,
+h6 {
+    font-family: 'Nunito';
+}
+
+.biodata {
+    margin-top: 15px;
+    display: flex;
+}
+
+.left-bio p, .right-bio p {
+    text-align: left;
+}
+
+.left-bio {
+    margin-right: 10px;
+}
+
+.right-bio {
+    margin-left: 10px;
+}
+
+.biodata p {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* =================== My Knowledge =================== */
+
+#my-knowledge {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#my-knowledge h2 {
+    text-align: center;
+    font-family: 'Nunito';
+}
+
+.line {
+    text-align: center;
+    line-height: 8px;
+    margin-bottom: 50px;
+}
+
+.line .line-1 {
+    width: 160px;
+    height: 2px;
+    background-color: #e67e22;
+    display: inline-block;
+}
+
+.line .line-2 {
+    width: 110px;
+    height: 2px;
+    background-color: #e67e22;
+    display: inline-block;
+}
+
+.knowledge-row {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.knowledge-col {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.knowledge-col img {
+    max-width: 70px;
+}
+
+.knowledge-col #img-css {
+    width: 50px;
+}
+
+.knowledge-col h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Nunito';
+}
+
+.knowledge-col p {
+    font-size: 15px;
+    color: #1A1A1A;
+    font-family: 'Nunito';
+}
+
+/* =================== Footer =================== */
+
+.line-footer {
+    width: 1140px;
+    height: 1px;
+    background-color: #e67e22;
+    display: inline-block;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+#copyright p {
+    letter-spacing: 0.20em;
+    text-align: center;
+    font-size: 0.80em;
+    color: #6f6f6f;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        transform: translateY(4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

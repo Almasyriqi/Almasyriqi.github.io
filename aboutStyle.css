@@ -1,0 +1,250 @@
+/* M. Syifa'ul Ikrom Almasyriqi */
+/* TI-2G */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Dosis', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Parisienne';
+    src: url(font/Parisienne/Parisienne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(font/Nunito/Nunito-Regular.ttf);
+}
+
+html {
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.navbar {
+    position: absolute;
+    padding-top: 20px;
+    width: 1140px;
+    height: auto;
+}
+
+.navbar img {
+    height: 80px;
+    padding-left: 60px;
+    width: auto;
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul {
+    float: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #1A1A1A;
+    font-size: 90%;
+    transition: border 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* =================== Story of R~DISH =================== */
+
+.restaurant-info {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-description,
+.restaurant-info-img {
+    flex-basis: 50%;
+}
+
+.restaurant-description {
+    margin-top: 120px;
+    margin-left: 100px;
+    padding-top: 50px;
+    text-align: center;
+    animation: fadeRight 1s forwards;
+    animation-delay: .2s;
+}
+
+.restaurant-info-img {
+    margin: 40px 50px;
+    animation: fadeLeft 1s forwards;
+    animation-delay: .2s;
+}
+
+.restaurant-info-img img {
+    width: 100%;
+    padding-top: 180px;
+    padding-right: 100px;
+}
+
+.global-headline {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sub-headline-1 h2,
+span {
+    font-family: 'Parisienne';
+    color: #e67e22;
+}
+
+.sub-headline-1 span {
+    font-size: 2em;
+}
+
+.sub-headline-2 h1 {
+    font-family: 'Nunito';
+    letter-spacing: 5px;
+    line-height: 0;
+}
+
+.restaurant-description p,
+.menu-description p {
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-family: 'Nunito';
+}
+
+.btn {
+    padding: 8px 40px;
+    font-weight: 10;
+    text-decoration: none;
+    color: white;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-1 {
+    background-color: #e67e22;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.btn-1:hover {
+    background-color: #1A1A1A;
+}
+
+/* =================== Between =================== */
+
+#between {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("img/img-between.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+#between .white h1 {
+    color: #fff;
+}
+
+#between .perfect h2 {
+    padding-top: 160px;
+}
+
+.animate-top {
+    margin-top: 50px;
+}
+
+/* =================== Menu =================== */
+
+.menu,
+.restaurant-menu-img {
+    display: flex;
+    align-items: center;
+}
+
+.menu-description,
+.restaurant-menu-img,
+.col-menu {
+    flex-basis: 50%;
+}
+
+.restaurant-menu-img {
+    margin-top: 10px;
+    margin-left: 100px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.restaurant-menu-img img {
+    width: 100%;
+}
+
+.menu-description {
+    padding-right: 100px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.menu-description p {
+    margin-bottom: 40px;
+}
+
+.col-menu img {
+    padding: 5px;
+}
+
+
+/* =================== Footer =================== */
+
+.line-footer {
+    margin-top: 50px;
+    width: 1140px;
+    height: 1px;
+    background-color: #e67e22;
+    display: inline-block;
+}
+
+footer p {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+#copyright p {
+    letter-spacing: 0.20em;
+    text-align: center;
+    font-size: 0.80em;
+    color: #6f6f6f;
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
